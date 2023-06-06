@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+ string checkGuessWord(const string& S, const string& T) {
+ string result;
+    
+    for (int i = 0; i < S.length(); i++) {
+        if (S[i] == T[i]) {
+            result += 'G'; 
+        } else {
+            result += 'B'; 
+        }
+    }
+    
+    return result;
+}
+
+int main() {
+  
+    int t;
+    cin >> t; 
+
+    while (t--) {
+        string S, T;
+        cin >>S >> T; 
+
+        string M = checkGuessWord(S, T);
+        cout << M <<endl; 
+    }
+    
+   
+	return 0;
+}
