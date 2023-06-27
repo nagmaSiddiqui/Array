@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int arr[10];
+   
+   cout << "adresss of first memory block:" << arr <<endl;
+    return 0;
+}
